@@ -22,9 +22,9 @@ export function Home() {
           />
 
           <datalist id="task-suggestions">
-            <option value="Mateus" />
-            <option value="Villa" />
-            <option value="Nova" />
+            <option value="Arte Pessoal: Novas Habilidades" />
+            <option value="Nova Língua: Aprendizado Diário" />
+            <option value="Desafio Fitness: Metas de Saúde" />
           </datalist>
 
           <label htmlFor="minutesAmount">durante</label>
@@ -35,6 +35,7 @@ export function Home() {
             step={5}
             min={5}
             max={60}
+            title="Maximo de 60 minutos."
           />
 
           <span>minutos.</span>
