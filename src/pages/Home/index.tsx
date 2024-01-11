@@ -33,16 +33,16 @@ export function Home() {
       },
     })
 
+  const task = watch('task')
+  const minutes = watch('minutesAmount')
+  const isSubmitDisabled = !task
+  const isMinutesDisabled = !minutes
+
   function handleCreateNewCycle(data: NewCycleFormData) {
     console.log(data)
   }
 
   console.log(formState.errors)
-
-  const task = watch('task')
-  const minutes = watch('minutesAmount')
-  const isSubmitDisabled = !task
-  const isMinutesDisabled = !minutes
 
   return (
     <HomeContainer>
