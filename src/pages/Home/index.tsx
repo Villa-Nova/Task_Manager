@@ -42,12 +42,12 @@ export function Home() {
   function handleCreateNewCycle(data: NewCycleFormData) {
     createNewCycle(data)
     reset()
+
+    console.log(formState.errors)
   }
 
   const task = watch('task')
   const isSubmitDisabled = !task
-
-  console.log(formState.errors)
 
   return (
     <HomeContainer>
